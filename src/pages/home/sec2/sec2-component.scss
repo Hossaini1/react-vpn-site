@@ -1,0 +1,28 @@
+@import '../../../styles/variablen';
+
+
+.sec2{
+    height: 100vh;
+    // background-color: aquamarine;
+}
+
+.text-content{
+    width: 75%;
+    margin: 0 auto;
+    // background-color: antiquewhite;
+    text-align: center;
+
+    h4{
+        font-size: $fs-2xl;
+        font-weight: $fw-semi-bold-500;
+        padding-block: .7rem;
+        color: $clr-neutral-dark;
+
+    }
+
+    p{
+        font-size: $fs-md;
+        color: $clr-secondary;
+    }
+}
+

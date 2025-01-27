@@ -1,0 +1,48 @@
+.container {
+  max-width: $max-w;
+  margin: auto;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+
+%btn-shared {
+  color: $clr-neutral-light;
+  background-color: $clr-primary;
+  transition: background-color 0.3s ease;
+  border: 0;
+  border-radius: 333px;
+  cursor: pointer;
+  &:hover {
+    background-color: lighten($clr-primary, 10%);
+  }
+}
+
+.btn {
+  &-started {
+    @extend %btn-shared;
+    padding: 12px 35px;
+    font-size: $fs-sm;
+    font-weight: $fw-semi-bold-500;
+  }
+
+  &-select {
+    @extend %btn-shared;
+    padding: 7px 40px;
+    font-size: $fs-md;
+  }
+}
+
+@media (min-width: 576px) {
+  .btn {
+    &-started {
+      padding: 16px 45px;
+      font-size: $fs-md;
+    }
+
+    &-select {
+      padding: 10px 55px;
+      font-size: $fs-md;
+    }
+  }
+}

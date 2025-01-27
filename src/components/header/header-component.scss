@@ -1,0 +1,138 @@
+@import "../../styles/variablen";
+@import "../../styles/mixins";
+
+.primary-header {
+  height: $header-h;
+  font-size: $fs-md;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+
+  nav {
+    @include flex();
+  }
+}
+
+.logo-box {
+  @include flex();
+  z-index: 2;
+  color: $clr-neutral-dark;
+  span {
+    font-weight: $fw-semi-bold-500;
+  }
+}
+
+.nav-menu {
+  background-color: $clr-neutral-light;
+  position: absolute;
+  top: 0;
+  left: -100% ;
+  display: none !important; // none delete
+  transition: left 0.4s ease-in;
+  height: 100vh;
+  width: 50%;
+  padding: 4rem 1.5rem;
+  @include flex(start, start, column);
+  gap: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  * {
+    color: $clr-secondary;
+  }
+
+  ul {
+    @include flex(start, start, column);
+    gap: 1rem;
+
+    li > a {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        left: 0;
+        bottom: 0px;
+        top: 20px;
+        height: 2px;
+        width: 0;
+        background: $clr-primary;
+        transition: width 0.5s ease;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.login-box {
+  @include flex();
+  gap: 0.7rem;
+
+  button {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom, color, 1s ease;
+
+    &:hover {
+      color: $clr-primary;
+      border-bottom: 2px solid $clr-primary;
+    }
+  }
+}
+
+.show-menu.nav-menu {
+  position: absolute;
+  left: 0;
+}
+
+// responsive
+
+@media (min-width: 576px) {
+  .nav-menu {
+    // display: none !important; // none delete
+   
+  }
+}
+
+@media (min-width: 1024px) {
+  .burger-menu {
+    display: none;
+  }
+  .logo-box {
+    gap: 2rem;
+  }
+
+  .nav-menu {
+    @include flex();
+    position: initial;
+    height: auto;
+    width: 75%;
+    padding: 0;
+    box-shadow: none;
+
+    ul {
+      @include flex();
+      width: 50%;
+    }
+  }
+
+  .login-box {
+    gap: 2rem;
+    
+    .sign-up-btn {
+      border: 2px solid $clr-primary;
+      padding: 7px 20px;
+      border-radius: 333px;
+      color: $clr-primary;
+      transition: none;
+
+      &:hover {
+        transform: scale(1.04);
+      }
+    }
+  }
+}
