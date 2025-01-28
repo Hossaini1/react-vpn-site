@@ -8,20 +8,20 @@ const HeaderComponent = () => {
   const [toggle, setToggle] = useState(false);
 
   const toggleMenu = () => {
-    if (window.innerWidth > 1024) {
-      setToggle(false);
-    } else {
-      setToggle((prevState) => !prevState);
-    }
+    setToggle((prevState) => !prevState);
   };
 
   useEffect(() => {
-    window.addEventListener("resize", toggleMenu);
-
-    return () => {
-      window.removeEventListener("resize", toggleMenu);
+    const handleResize = () => {
+      if (window.innerWidth > 1024) {
+        setToggle(false);
+      }
     };
-  }, [toggle]);
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <header className="primary-header">
       <div className="container">

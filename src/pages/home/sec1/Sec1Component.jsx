@@ -20,8 +20,13 @@ const Sec1Component = () => {
             <button className="btn-started">Get started</button>
           </div>
           <div className="hero-img">
-            <img src="src\assets\images\hero-img.svg" alt="hero1-image" />
+             <picture  >
+              <source srcSet="src/assets/images/hero-img.svg" media="(min-width:586px)" alt="hero1-image" />
+            <img src="src/assets/images/hero1-mobile.svg" alt="hero1-image" />
+          </picture>
           </div>
+         
+        
         </div>
 
         <div className="over-content">

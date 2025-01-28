@@ -6,4 +6,18 @@
 }
 
 
+$fs-mobile:.6rem;
+$fs-pc:1rem;
+
+@mixin fs-md-20($s,$m){
+
+  font-size: $s;
+
+  @media (min-width: 678px) {
+      font-size: $m;
+
+      }
+
+}
+
 

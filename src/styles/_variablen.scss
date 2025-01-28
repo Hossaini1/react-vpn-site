@@ -5,37 +5,27 @@ $clr-secondary-accent: #d8d8d8;
 $clr-neutral-dark: #151515;
 $clr-neutral-dark-accent: #101010;
 $clr-neutral-light: #ffffff;
-$clr-tick-green: #2BBC28;
+$clr-tick-green: #2bbc28;
 
-$fs-xs: 0.531rem; 
-$fs-sm: 0.638rem; 
-$fs-md: clamp( .65rem, 3vw, 1rem); 
-$fs-md-20: 0.683rem; 
-$fs-lg: .85rem; 
-$fs-xl: 0.956rem; 
-$fs-2xl:clamp( 1.17rem, 3.5vw, 2rem); 
-$fs-4xl: clamp(1.4rem, 3.5vw , 2.4rem); // 50
+$fs-xs: 0.531rem;
+$fs-sm: 0.638rem;
+// $fs-md-20: 0.6rem;
+$fs-md: clamp(0.65rem, 3vw, 1rem);
+$fs-lg: 0.85rem;
+$fs-xl: 0.956rem;
+$fs-2xl: clamp(1.17rem, 3.5vw, 2rem);
+$fs-4xl: clamp(1.4rem, 3.5vw, 2.4rem); // 50
 
+$max-w: 1024px;
 
-$max-w:1024px;
+$header-h: 2.125rem;
 
-$header-h:2.125rem;
+$sec-p: 4.688rem;
 
-$sec-p:4.688rem;
-
-
-$fw-regular:400;
-$fw-semi-bold-500:500;
-$fw-semi-bold-600:600;
+$fw-regular: 400;
+$fw-semi-bold-500: 500;
+$fw-semi-bold-600: 600;
 
 
-@media ( min-width: 576px){
-    $fs-xs: 0.75rem; // 15 und 14px
-    $fs-sm: 1rem; //16
-    $fs-md: 1.25rem; // 18
-    $fs-md-20: 1.35rem; // 18
-    $fs-lg: 1.5rem; // 25px 26px
-    $fs-xl: 1.75rem; // 28
-    $fs-2xl: 1.9rem; // 30
-    $fs-4xl: 3.5rem; // 50 
-}
+
+
