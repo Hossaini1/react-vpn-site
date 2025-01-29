@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
-import { BurgerMenuIcon } from "../icons/Icons";
 import "./header-component.scss";
+import { BurgerMenuIcon } from "../icons/Icons";
 
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+
 
 const HeaderComponent = () => {
   const [toggle, setToggle] = useState(false);
@@ -27,7 +28,7 @@ const HeaderComponent = () => {
       <div className="container">
         <nav>
           <NavLink to="/" className="logo-box">
-            <img src="src\assets\images\logo.svg" alt="" />
+            <img src="src/assets/images/logo.svg" alt="logo" />
             <h1>
               Lates<span>VPN</span>
             </h1>
@@ -54,8 +55,8 @@ const HeaderComponent = () => {
             </ul>
 
             <div className="login-box">
-              <button>Sign in</button>
-              <button className="sign-up-btn">Sign up</button>
+              <button ><NavLink className="sign-in-btn" to="/">Sign in</NavLink></button>
+              <button ><NavLink className="sign-up-btn" to="/signup">Sign up</NavLink></button>
             </div>
           </div>
         </nav>

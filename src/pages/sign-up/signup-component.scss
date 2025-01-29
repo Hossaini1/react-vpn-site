@@ -1,0 +1,11 @@
+.err{
+    color: red;
+}
+
+.err-border{
+    border: 2px solid red;
+
+    &:focus{
+        outline:1px solid red ;
+    }
+}

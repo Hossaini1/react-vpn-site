@@ -1,5 +1,6 @@
 import App from "../../App"
 import HomeComponent from "../../pages/home/HomeComponent"
+import SignUpComponent from "../../pages/sign-up/SignUpComponent"
 
  export const routes = [
     {
@@ -10,6 +11,10 @@ import HomeComponent from "../../pages/home/HomeComponent"
             {
                 index:true,
                 element: <HomeComponent />
+            },
+            {
+                path:'/signup',
+                element: <SignUpComponent />
             },
         ]
 

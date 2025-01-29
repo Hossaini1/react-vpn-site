@@ -1,6 +1,6 @@
 .container {
   max-width: 1024px;
-  margin: auto;
+  margin: 0 auto;
   padding: 1rem;
   overflow: hidden;
 }
@@ -27,7 +27,7 @@
   font-size: clamp(0.65rem, 3vw, 1rem);
 }
 
-@media (min-width: 576px) {
+@media (min-width: 678px) {
   .btn-started {
     padding: 16px 45px;
     font-size: clamp(0.65rem, 3vw, 1rem);
@@ -108,6 +108,7 @@ svg {
 }
 body {
   font-family: "Rubik", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
 }
 body main {
   padding-top: 2rem;
