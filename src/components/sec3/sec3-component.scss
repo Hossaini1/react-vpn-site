@@ -1,0 +1,47 @@
+@import "../../styles/mixins";
+@import "../../styles/variablen";
+
+
+.inner-container {
+//   background-color: antiquewhite;
+  @include flex(center, center, column);
+  gap: 5rem;
+}
+
+.title-box {
+  max-width: 75%;
+  text-align: center;
+  h5 {
+    font-size: clamp(17px, 3vw, 30px);
+    font-weight: $fw-semi-bold-500;
+    margin-bottom: 1rem;
+  }
+
+  p{
+    font-size: clamp(9px, 2.5vw, 16px);
+    color: $clr-secondary;
+  }
+}
+
+.img1 {
+  max-width: 90%;
+  img{
+    width: 100%;
+  }
+ 
+}
+
+.img2 {
+  min-width: 100%;
+//   background-color: aqua;
+
+  img{
+    width: 100%;
+  }
+}
+
+@media (min-width: 678px) {
+  .title-box {
+    max-width: 50%;
+  }
+}

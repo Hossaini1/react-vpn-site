@@ -1,0 +1,11 @@
+.sec{
+    min-height: 100%;
+    padding-block: 5rem;
+}
+
+
+@media (min-width:678px) {
+    .sec{ 
+        padding-block: 8rem;
+    }
+}

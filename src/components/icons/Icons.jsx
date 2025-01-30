@@ -42,7 +42,76 @@ export const TickIcon = () => (
   <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
 </svg>
 
-
-
 );
+
+export const FarmerSmall = () => (
+<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_1_355)">
+<circle cx="24" cy="25" r="12" fill="white"/>
+<circle cx="24" cy="25" r="11.5102" stroke="#F53838" stroke-width="0.979592"/>
+</g>
+<circle cx="23.7551" cy="24.7552" r="5.38775" fill="#F53838"/>
+<defs>
+<filter id="filter0_d_1_355" x="0.734694" y="0.755102" width="52.4082" height="52.4082" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="2.93878" dy="1.95918"/>
+<feGaussianBlur stdDeviation="7.10204"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.11 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_355"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_355" result="shape"/>
+</filter>
+</defs>
+</svg>
+)
+ 
+export const FarmerMedium = () => (
+  <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_1_367)">
+<circle cx="33" cy="35" r="17" fill="white"/>
+<circle cx="33" cy="35" r="16.3061" stroke="#F53838" stroke-width="1.38776"/>
+</g>
+<circle cx="32.6531" cy="34.6532" r="7.63265" fill="#F53838"/>
+<defs>
+<filter id="filter0_d_1_367" x="0.0408173" y="0.653062" width="74.2449" height="74.2449" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="4.16327" dy="2.77551"/>
+<feGaussianBlur stdDeviation="10.0612"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.11 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_367"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_367" result="shape"/>
+</filter>
+</defs>
+</svg>
+)
+
+export const FarmerLarge = () => (
+<svg width="107" height="107" viewBox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_1_342)">
+<circle cx="47.5" cy="49.5" r="24.5" fill="white"/>
+<circle cx="47.5" cy="49.5" r="23.5" stroke="#F53838" stroke-width="2"/>
+</g>
+<circle cx="47" cy="49" r="11" fill="#F53838"/>
+<defs>
+<filter id="filter0_d_1_342" x="0" y="0" width="107" height="107" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="6" dy="4"/>
+<feGaussianBlur stdDeviation="14.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.11 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_342"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_342" result="shape"/>
+</filter>
+</defs>
+</svg>
+)
+
+
+
+  
+  
 
