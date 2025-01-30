@@ -1,0 +1,39 @@
+@import "../../styles/variablen";
+@import "../../styles/mixins";
+
+.sec2 {
+  
+  min-height: 100%;
+  background-color: antiquewhite;
+  width: 100%;
+  
+}
+
+.text-content {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h4 {
+    font-size: $fs-2xl;
+    font-weight: $fw-semi-bold-500;
+    padding-bottom: 1rem;
+    color: $clr-neutral-dark;
+  }
+
+  p {
+    font-size: $fs-md;
+    color: $clr-secondary;
+    text-justify: justify;
+  }
+}
+
+@media (min-width: 678px) {
+  .sec2 {
+    min-height: 100%;
+  }
+
+  .text-content {
+    margin-bottom: 4rem;
+  }
+}

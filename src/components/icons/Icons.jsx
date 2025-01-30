@@ -38,7 +38,7 @@ export const ServiceIcon = () => (
 
 );
 export const TickIcon = () => (
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 " width="clamp(8px, 3.5vw,16px)" >
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 " width="clamp(8px, 2vw,16px)" >
   <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
 </svg>
 

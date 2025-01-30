@@ -1,4 +1,4 @@
-import { LocationIcon, ServiceIcon, TickIcon, UsersIcon } from "../../../components/icons/Icons";
+import { LocationIcon, ServiceIcon, TickIcon, UsersIcon } from "../icons/Icons";
 import "./sec1-component.scss";
 
 const Sec1Component = () => {

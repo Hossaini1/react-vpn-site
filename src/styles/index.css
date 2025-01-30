@@ -23,8 +23,8 @@
   font-weight: 500;
 }
 .btn-select {
-  padding: 7px 40px;
-  font-size: clamp(0.65rem, 3vw, 1rem);
+  padding: 7px 38px;
+  font-size: 0.638rem;
 }
 
 @media (min-width: 678px) {

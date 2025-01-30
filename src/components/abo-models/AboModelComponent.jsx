@@ -1,5 +1,5 @@
-import { TickIcon } from "../icons/Icons";
 import "./abo-models.scss";
+import { TickIcon } from "../icons/Icons";
 
 const AboModelComponent = () => {
   const abos = [
@@ -56,6 +56,7 @@ const AboModelComponent = () => {
   return (
     <div className="slider-container">
       <div className="slider-box">
+        <div className="slider-container">
         {abos.map((abo) => (
           <div key={abo.id} className="abo-container">
             <div className="inner-img-option-box" >
@@ -73,7 +74,7 @@ const AboModelComponent = () => {
               <ul>
                 {abo.options.map((option, index) => (
                   <li key={index}>
-                    <span>
+                    <span className="icon">
                       <TickIcon />
                     </span>
                     <span>{option}</span>
@@ -84,10 +85,11 @@ const AboModelComponent = () => {
 
             <div className="abo-footer">
               <h5>{abo.price} <span> {abo.duration ? `/ ${abo.duration}`:''}</span></h5>
-              <button>{abo.btn}</button>
+              <button className="btn-select">{abo.btn}</button>
             </div>
           </div>
         ))}
+        </div>
       </div>
     </div>
   );
