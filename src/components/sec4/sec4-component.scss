@@ -1,0 +1,39 @@
+@import '../../styles/mixins';
+@import '../../styles/variablen';
+
+.sec4{
+    @include flex(flex-start,flex-start,column);   
+    // height: 75vh;
+    background-color: aqua;
+    grid-column: 1/9 ;
+    grid-row: 1/18;
+
+    article{
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 4rem;
+
+        h5{
+            @include fs($fs-2xl-mob,$vw-3,$fs-2xl-pc);
+            font-weight: $fw-semi-bold-500;
+            margin-bottom: .5rem;
+        }
+
+        p{
+            @include fs($fs-md-mob,$vw-2-5,$fs-md-pc);
+            color: $clr-secondary;
+
+        }
+    }
+}
+
+@media (min-width:678px) {
+    .sec4{
+    article{
+        max-width: 50%;
+        background-color: aliceblue;
+     
+    }
+}
+}

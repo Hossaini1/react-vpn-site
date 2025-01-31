@@ -3,6 +3,7 @@ import { BurgerMenuIcon } from "../icons/Icons";
 
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import LogoComponent from "../logo-component/LogoComponent";
 
 
 const HeaderComponent = () => {
@@ -27,12 +28,13 @@ const HeaderComponent = () => {
     <header className="primary-header">
       <div className="container">
         <nav>
-          <NavLink to="/" className="logo-box">
+          <LogoComponent />
+          {/* <NavLink to="/" className="logo-box">
             <img src="src/assets/images/logo.svg" alt="logo" />
             <h1>
               Lates<span>VPN</span>
             </h1>
-          </NavLink>
+          </NavLink> */}
 
           <span onClick={() => toggleMenu()} className="burger-menu">
             <BurgerMenuIcon />

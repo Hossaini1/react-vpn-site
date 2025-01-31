@@ -1,0 +1,191 @@
+
+
+// // 
+// @import '../../styles/mixins';
+// @import '../../styles/variablen';
+
+// .carousel-container {
+//   z-index: 1000;
+//   background-color: antiquewhite;
+//   position: relative;
+//   width: 100%;
+//   overflow: hidden;
+//   padding: 1rem;
+// }
+
+// .slider {
+//   display: flex;
+//   transition: transform 0.5s ease-in-out;
+//   gap: 1rem;
+// }
+
+// .slide {
+//   flex: 0 0 33.33%; // Standardmäßig 3 Elemente sichtbar
+//   transition: opacity 0.5s ease-in-out;
+//   min-width: 33.33%;
+// }
+
+// .card {
+//   background-color: rgb(244, 245, 246);
+//   width: 100%;
+//   height: 100%;
+//   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+//   border: 2px solid gray;
+//   transition: 0.3s;
+
+//   &:hover {
+//     border-color: $clr-primary;
+//   }
+// }
+
+// .prev, .next {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   background: $clr-primary;
+//   padding: 0.5rem;
+//   cursor: pointer;
+//   border: none;
+//   font-size: 1.2rem;
+//   color: white;
+//   border-radius: 50%;
+  
+//   &:hover {
+//     background: darken($clr-primary, 10%);
+//   }
+// }
+
+// .prev {
+//   left: 10px;
+// }
+
+// .next {
+//   right: 10px;
+// }
+
+// .dots {
+//   position: absolute;
+//   bottom: 10px;
+//   left: 10px;
+//   display: flex;
+//   gap: 8px;
+// }
+
+// .dot {
+//   width: 10px;
+//   height: 10px;
+//   border-radius: 50%;
+//   cursor: pointer;
+//   background: $clr-secondary;
+//   transition: width 0.3s ease-in-out;
+
+//   &.activeDot {
+//     width: 20px;
+//     border-radius: 5px;
+//     background: $clr-primary;
+//   }
+// }
+
+// // --- Mobile Ansicht ---
+// @media (max-width: 768px) {
+//   .slide {
+//     flex: 0 0 100%; // 1 Karte sichtbar auf kleinen Bildschirmen
+//     min-width: 100%;
+//   }
+// }
+
+// // 
+
+@import '../../styles/mixins';
+@import '../../styles/variablen';
+
+.carousel-container {
+  z-index: 1000;
+  background-color: antiquewhite;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 1rem;
+}
+
+.slide {
+  flex: 0 0 ${(100 / itemsPerPage)}%; // Dynamische Breite basierend auf itemsPerPage
+  transition: opacity 0.5s ease-in-out;
+  min-width: ${(100 / itemsPerPage)}%; // Stellt sicher, dass jedes Slide korrekt dargestellt wird
+}
+
+.card {
+  background-color: rgb(244, 245, 246);
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid gray;
+  transition: 0.3s;
+
+  &:hover {
+    border-color: $clr-primary;
+  }
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: $clr-primary;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 50%;
+  
+  &:hover {
+    background: darken($clr-primary, 10%);
+  }
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: $clr-secondary;
+  transition: width 0.3s ease-in-out;
+
+  &.activeDot {
+    width: 20px;
+    border-radius: 5px;
+    background: $clr-primary;
+  }
+}
+
+// --- Mobile Ansicht ---
+@media (max-width: 768px) {
+  .slide {
+    flex: 0 0 100%; // 1 Karte sichtbar auf kleinen Bildschirmen
+    min-width: 100%;
+  }
+}
+

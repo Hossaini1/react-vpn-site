@@ -9,12 +9,11 @@ $clr-tick-green: #2bbc28;
 
 $fs-xs: 0.531rem;
 $fs-sm: 0.638rem;
-// $fs-md-20: 0.6rem;
 $fs-md: clamp(0.65rem, 3vw, 1rem);
 $fs-lg: 0.85rem;
 $fs-xl: 0.956rem;
 $fs-2xl: clamp(1.17rem, 3.5vw, 2rem);
-$fs-4xl: clamp(1.4rem, 3.5vw, 2.4rem); // 50
+$fs-4xl: clamp(1.4rem, 3.5vw, 2.4rem);
 
 $max-w: 1024px;
 
@@ -26,6 +25,25 @@ $fw-regular: 400;
 $fw-semi-bold-500: 500;
 $fw-semi-bold-600: 600;
 
+// neue font variabeln test
+
+$fs-sm-pc: 125rem;
+$fs-sm-mob: 0.8rem;
+
+$fs-md-pc: 0.9rem;
+$fs-md-mob: 0.7rem;
+
+$fs-xl-pc: 125rem;
+$fs-xl-mob: 0.8rem;
+
+// $fs-xl-pc:125rem;
+// $fs-xl-mob:.8rem;
+
+$fs-2xl-pc: 1.85rem;
+$fs-2xl-mob: 1.1rem;
 
 
-
+$vw-2:2vw;
+$vw-2-5:2.5vw;
+$vw-3:3vw;
+$vw-3-5:3.5vw;

@@ -21,3 +21,10 @@ $fs-pc:1rem;
 }
 
 
+@mixin fs($s,$vw,$m){
+
+  font-size: clamp($s,$vw,$m);
+
+}
+
+

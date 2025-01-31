@@ -15,14 +15,14 @@
   }
 }
 
-.logo-box {
-  @include flex();
-  z-index: 2;
-  color: $clr-neutral-dark;
-  span {
-    font-weight: $fw-semi-bold-500;
-  }
-}
+// .logo-box {
+//   @include flex();
+//   z-index: 2;
+//   color: $clr-neutral-dark;
+//   span {
+//     font-weight: $fw-semi-bold-500;
+//   }
+// }
 
 .nav-menu {
   background-color: $clr-neutral-light;
