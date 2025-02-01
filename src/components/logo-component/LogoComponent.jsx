@@ -1,16 +1,16 @@
-import './logo-component.scss';
-import { NavLink } from 'react-router-dom';
+import "./logo-component.scss";
+import { NavLink } from "react-router-dom";
 
 const LogoComponent = () => {
   return (
     <>
-          <NavLink to="/" className="logo-box">
-            <img src="src/assets/images/logo.svg" alt="logo" />
-            <h1>
-              Lates<span>VPN</span>
-            </h1>
-          </NavLink>
+      <NavLink to="/" className="logo-box">
+        <img src="src/assets/images/logo.svg" alt="logo" />
+        <h1>
+          Lates<span>VPN</span>
+        </h1>
+      </NavLink>
     </>
-  )
-}
-export default LogoComponent
+  );
+};
+export default LogoComponent;

@@ -1,21 +1,15 @@
-@import './variablen';
-@import './utilities';
-@import './reset';
-@import './fonts';
-@import './mixins';
+@import "./variablen";
+@import "./utilities";
+@import "./reset";
+@import "./fonts";
+@import "./mixins";
 
+// allgemeine Style
+body {
+  font-family: "Rubik", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
 
-
-// allgemeine Style 
-body{
-    font-family: 'Rubik' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-
-    main{
-        padding-top: 2rem;
-       
-    }
+  main {
+    padding-top: 2rem;
+  }
 }
-
-
-

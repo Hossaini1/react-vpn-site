@@ -11,20 +11,19 @@ import FooterComponent from "../../components/footer/FooterComponent";
 const HomeComponent = () => {
   return (
     <>
- <Sec1Component />
- <Sec2Component />  
+      <Sec1Component />
+      <Sec2Component />
 
- <SectionComponent>
-  <Sec3Component />
- </SectionComponent>
+      <SectionComponent>
+        <Sec3Component />
+      </SectionComponent>
 
- <DoppleSectionComponent>
-  <Sec4Component />
-  <OverSec2Component />
-  <FooterComponent />
- </DoppleSectionComponent>
-
-  </>
+        <DoppleSectionComponent>
+        <Sec4Component />
+        <OverSec2Component />
+        <FooterComponent />
+      </DoppleSectionComponent>
+    </>
   );
 };
 export default HomeComponent;

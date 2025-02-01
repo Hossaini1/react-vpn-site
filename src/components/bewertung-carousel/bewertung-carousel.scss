@@ -7,8 +7,6 @@
   bottom: 0;
   width: 100%;
   min-height: 40%;
-  // overflow: hidden;
-  padding-left: 1rem;
 }
 
 .slider {
@@ -75,7 +73,7 @@
         width: max-content;
       }
       span {
-        font-size: clamp(11px , 3vw , 15px);
+        font-size: clamp(11px, 3vw, 15px);
         width: max-content;
         color: $clr-secondary;
       }
@@ -112,7 +110,6 @@
 
 .next {
   right: 10px;
-  
 }
 
 .dots {
@@ -146,8 +143,6 @@
   .slide {
     flex: 0 0 48%;
   }
-
-
 }
 
 @media (min-width: 1024px) {
@@ -156,6 +151,6 @@
     padding-bottom: 15rem;
   }
   .slide {
-    flex: 0 0 32%;
+    flex: 0 0 32.5%;
   }
 }

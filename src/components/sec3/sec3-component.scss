@@ -1,9 +1,7 @@
 @import "../../styles/mixins";
 @import "../../styles/variablen";
 
-
 .inner-container {
-//   background-color: antiquewhite;
   @include flex(center, center, column);
   gap: 5rem;
 }
@@ -17,7 +15,7 @@
     margin-bottom: 1rem;
   }
 
-  p{
+  p {
     font-size: clamp(9px, 2.5vw, 16px);
     color: $clr-secondary;
   }
@@ -25,17 +23,15 @@
 
 .img1 {
   max-width: 90%;
-  img{
+  img {
     width: 100%;
   }
- 
 }
 
 .img2 {
   min-width: 100%;
-//   background-color: aqua;
 
-  img{
+  img {
     width: 100%;
   }
 }

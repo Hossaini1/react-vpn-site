@@ -1,18 +1,17 @@
-@import '../../styles/variablen';
-@import '../../styles/mixins';
+@import "../../styles/variablen";
+@import "../../styles/mixins";
 
 .logo-box {
-    @include flex();
-    z-index: 2;
-    color: $clr-neutral-dark;
-    span {
-      font-weight: $fw-semi-bold-500;
-    }
+  @include flex();
+  z-index: 2;
+  color: $clr-neutral-dark;
+  span {
+    font-weight: $fw-semi-bold-500;
   }
+}
 
-  @media (min-width: 1024px) {
- 
-    .logo-box {
-      gap: 2rem;
-    }
+@media (min-width: 1024px) {
+  .logo-box {
+    gap: 2rem;
+  }
 }

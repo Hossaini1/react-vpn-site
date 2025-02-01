@@ -63,7 +63,7 @@ export const AboBewertungContextProvider = ({ children }) => {
       rating: 4.5,
       review:
         "I am very happy to use this VPN. It turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best.",
-      avatar:'src/assets/images/1.jpg'
+      avatar: "src/assets/images/1.jpg",
     },
     {
       id: "u2",
@@ -71,7 +71,7 @@ export const AboBewertungContextProvider = ({ children }) => {
       location: "Warsaw, Germany",
       rating: 5,
       review: "I am very happy to use this VPN.",
-      avatar:'src/assets/images/2.jpg'
+      avatar: "src/assets/images/2.jpg",
     },
     {
       id: "u3",
@@ -80,7 +80,7 @@ export const AboBewertungContextProvider = ({ children }) => {
       rating: 4,
       review:
         "I am very happy to use this VPN. It turned out to be more than my expectations .",
-      avatar:'src/assets/images/3.jpg'
+      avatar: "src/assets/images/3.jpg",
     },
     {
       id: "u4",
@@ -88,9 +88,8 @@ export const AboBewertungContextProvider = ({ children }) => {
       location: "Warsaw, USA",
       rating: 4.5,
       review: "I am very happy to use LaslesVPN always the best.",
-      avatar:'src/assets/images/4.jpg'
+      avatar: "src/assets/images/4.jpg",
     },
-
   ];
 
   return (

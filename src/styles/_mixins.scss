@@ -5,26 +5,17 @@
   flex-direction: $direction;
 }
 
+$fs-mobile: 0.7rem;
+$fs-pc: 1rem;
 
-$fs-mobile:.7rem;
-$fs-pc:1rem;
-
-@mixin fs-md-20($s,$m){
-
+@mixin fs-md-20($s, $m) {
   font-size: $s;
 
   @media (min-width: 678px) {
-      font-size: $m;
-
-      }
-
+    font-size: $m;
+  }
 }
 
-
-@mixin fs($s,$vw,$m){
-
-  font-size: clamp($s,$vw,$m);
-
+@mixin fs($s, $vw, $m) {
+  font-size: clamp($s, $vw, $m);
 }
-
-

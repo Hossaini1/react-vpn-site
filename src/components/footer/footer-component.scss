@@ -29,8 +29,8 @@
 }
 
 .socialmedia {
-    @include flex(center, center);
-    gap: 2rem;
+  @include flex(center, center);
+  gap: 2rem;
 
   span {
     @include flex(center, center);
@@ -39,13 +39,11 @@
     vertical-align: middle;
     background-color: $clr-primary-accent;
     color: $clr-primary;
-    transition: background-color .4s ease;
+    transition: background-color 0.4s ease;
 
-    &:hover{
-        background-color: darken($clr-primary-accent,30%);
+    &:hover {
+      background-color: darken($clr-primary-accent, 30%);
     }
-
-
   }
 }
 

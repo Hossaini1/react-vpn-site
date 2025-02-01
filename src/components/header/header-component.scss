@@ -66,12 +66,10 @@
   button {
     background: transparent;
     border: 0;
-   
-  
   }
 
   .sign-in-btn {
-    border-bottom: 2px solid transparent ;
+    border-bottom: 2px solid transparent;
     transition: border-bottom 0.9s ease;
     &:hover {
       color: $clr-primary;
@@ -119,16 +117,11 @@
       padding: 7px 20px;
       border-radius: 333px;
       color: $clr-primary;
-      
 
       &:hover {
-        color: lighten($clr-primary,10%);
-        border-color:lighten($clr-primary,10%) ;
-        
+        color: lighten($clr-primary, 10%);
+        border-color: lighten($clr-primary, 10%);
       }
     }
-
   }
-
-
 }

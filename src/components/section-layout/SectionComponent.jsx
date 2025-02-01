@@ -1,20 +1,15 @@
-import './section-component.scss';
-import PropTypes from 'prop-types';
+import "./section-component.scss";
+import PropTypes from "prop-types";
 
-
-
-const SectionComponent = ({children}) => {
+const SectionComponent = ({ children }) => {
   return (
-    <section className='sec'>
-        <div className="container">
-          {children}  
-        </div>
+    <section className="sec">
+      <div className="container">{children}</div>
     </section>
-  )
-}
+  );
+};
 SectionComponent.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
 
 export default SectionComponent;
