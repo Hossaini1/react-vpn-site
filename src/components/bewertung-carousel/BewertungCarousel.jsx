@@ -9,7 +9,7 @@ const BewertungCarousel = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setItemsPerPage(window.innerWidth > 578 ? 2 : 1);
+            // setItemsPerPage(window.innerWidth > 578 ? 2 : 1);
             setItemsPerPage(window.innerWidth > 1024 ? 3 : 1);
         };
         window.addEventListener("resize", handleResize);
@@ -39,16 +39,21 @@ const BewertungCarousel = () => {
             {reviews && (
                 <div className="carousel-container">
                     <div className="slider" style={{ transform: `translateX(-${currentIndex * (100 / itemsPerPage)}%)` }}>
-                        {reviews.map((review, index) => (
+                        {reviews.map((review) => (
                             <div key={review.id} className="slide">
                                 <div className="card">
                                     <div className="card-header">
-                                        <img src={review.avatar} alt={review.name} className="avatar" />
-                                        <div>
-                                            <h6 className="name">{review.name}</h6>
-                                            <p className="location">{review.location}</p>
+                                        <div className="img-box">
+                                        <img src={review.avatar} alt={review.name}  />
                                         </div>
-                                        <span className="rating">⭐ {review.rating}</span>
+                                        <div>
+                                            <h6 >{review.name}</h6>
+                                            <div>
+                                            <p >{review.location}</p>
+                                            <span >⭐ {review.rating}</span>
+                                            </div>
+                                        </div>
+                                        {/* <span className="rating">⭐ {review.rating}</span> */}
                                     </div>
                                     <p className="review">{review.review}</p>
                                 </div>

@@ -3,4 +3,10 @@
     background-color: gray;
     grid-column: 1/9 ;
     grid-row: 18/25;
+    display: flex;
+    padding: 2rem;
+}
+
+.footer-box-right{
+    display: flex;
 }

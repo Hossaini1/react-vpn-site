@@ -63,7 +63,7 @@ export const AboBewertungContextProvider = ({ children }) => {
       rating: 4.5,
       review:
         "I am very happy to use this VPN. It turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best.",
-      // avatar:'src/assets/images/1.jpg'
+      avatar:'src/assets/images/1.jpg'
     },
     {
       id: "u2",
