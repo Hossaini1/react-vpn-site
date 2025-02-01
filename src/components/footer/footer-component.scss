@@ -13,6 +13,7 @@
   .logo-box {
     justify-content: flex-start;
     gap: 0.5rem;
+    z-index: 1;
   }
 }
 
@@ -103,4 +104,6 @@
   .footer-box-right {
     justify-content: end;
   }
+
+  
 }

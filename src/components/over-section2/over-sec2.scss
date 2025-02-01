@@ -6,7 +6,7 @@
   background-color: $clr-neutral-light;
   grid-column: 2/8;
   grid-row: 9/-8;
-  z-index: 5;
+  z-index: 1;
   @include flex(center, center);
   gap: 2rem;
   flex-wrap: wrap;
