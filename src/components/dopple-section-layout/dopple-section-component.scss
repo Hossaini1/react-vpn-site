@@ -1,5 +1,9 @@
 .sec-layout{
     display: grid;
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(24,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+.sec4, .footer1, .over-sec2{
+    grid-template-rows: repeat(15,1fr);
 }

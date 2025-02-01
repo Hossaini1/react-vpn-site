@@ -1,4 +1,5 @@
 import './section-component.scss';
+import PropTypes from 'prop-types';
 
 
 
@@ -11,5 +12,9 @@ const SectionComponent = ({children}) => {
     </section>
   )
 }
+SectionComponent.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 
 export default SectionComponent;

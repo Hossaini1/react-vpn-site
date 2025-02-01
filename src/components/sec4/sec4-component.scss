@@ -2,12 +2,11 @@
 @import '../../styles/variablen';
 
 .sec4{
-    @include flex(flex-start,flex-start,column);   
-    // height: 75vh;
+
+    @include flex(flex-start,center,column);   
     min-height: 100%;
-    // background-color: aqua;
-    grid-column: 1/9 ;
-    grid-row: 1/17;
+    grid-column: 1/9;
+    grid-row: 1/11;
 
     article{
         max-width: 70%;
@@ -31,10 +30,9 @@
 
 @media (min-width:678px) {
     .sec4{
+        grid-row: 1/12 ;
     article{
         max-width: 50%;
-        // background-color: aliceblue;
-     
     }
 }
 }

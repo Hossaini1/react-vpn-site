@@ -1,7 +1,56 @@
+@import '../../styles/mixins';
+@import '../../styles/variablen';
+@import '../../styles/utilities';
+
+
 .over-sec2{
-    // height: 10vh;
-    background-color: aliceblue;
+    background-color: $clr-neutral-light;
     grid-column: 2/8 ;
-    grid-row: 15/19;
+    grid-row: 9/-8;
     z-index: 5;
+    @include flex(center, center);
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+
+  
+}
+
+.over-article{
+    h5{
+        text-align: center;
+        font-size: clamp(18px,3vw , 23px);
+        font-weight: $fw-semi-bold-500;
+        margin-bottom: .6rem;
+    }
+
+    p{
+        text-align: center;
+        font-size: $fs-md;
+    }
+
+}
+
+.subscribe-box{
+    padding: 1rem 0;
+}
+
+@media (min-width: 678px) {
+    .over-sec2{
+     
+        @include flex();  
+            grid-row: 10/-7;
+    }
+
+    .over-article{
+        max-width: 45%;
+      
+
+        h5{
+            margin-bottom: 1rem;
+        }
+      
+    }
 }

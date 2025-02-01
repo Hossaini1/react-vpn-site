@@ -15,15 +15,6 @@
   }
 }
 
-// .logo-box {
-//   @include flex();
-//   z-index: 2;
-//   color: $clr-neutral-dark;
-//   span {
-//     font-weight: $fw-semi-bold-500;
-//   }
-// }
-
 .nav-menu {
   background-color: $clr-neutral-light;
   position: absolute;
@@ -106,7 +97,7 @@
 
   .nav-menu {
     @include flex();
-
+    background-color: transparent;
     position: initial;
     height: auto;
     width: 75%;
@@ -121,9 +112,10 @@
 
   .login-box {
     gap: 2rem;
+    padding: 1rem;
 
     .sign-up-btn {
-      border: 2px solid $clr-primary;
+      border: 2px solid $clr-primary !important;
       padding: 7px 20px;
       border-radius: 333px;
       color: $clr-primary;
@@ -136,13 +128,6 @@
       }
     }
 
-    // .sign-in-btn {
-    //   border-bottom: 0;
-    //   padding-bottom: 0;
-    //   &:hover {
-    //     border-bottom: 0;
-    //   }
-    // }
   }
 
 

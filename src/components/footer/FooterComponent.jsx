@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import LogoComponent from "../logo-component/LogoComponent";
 import "./footer-component.scss";
+import { EmailIcon, MapIcon, TelIcon } from "../icons/Icons";
 
 const FooterComponent = () => {
   return (
@@ -12,9 +13,15 @@ const FooterComponent = () => {
           id purus ullamcorper. Vel vel erat semper augue.
         </p>
         <div className="socialmedia">
-          <span>icon</span>
-          <span>icon</span>
-          <span>icon</span>
+          <span>
+            <EmailIcon />
+          </span>
+          <span>
+            <TelIcon />
+          </span>
+          <span>
+            <MapIcon />
+          </span>
         </div>
       </div>
 

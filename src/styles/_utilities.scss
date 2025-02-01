@@ -1,7 +1,7 @@
 .container {
   max-width: $max-w;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   overflow: hidden;
 }
 
@@ -32,6 +32,13 @@
     font-size: $fs-sm;
   }
 
+  &-subscribe{
+
+    @extend %btn-shared;
+    padding: 12px 38px;
+    font-size: $fs-md;
+
+  }
   
 }
 
@@ -47,5 +54,6 @@
       padding: 10px 55px;
       font-size: $fs-md;
     }
+
   }
 }

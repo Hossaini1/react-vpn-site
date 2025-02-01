@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import LogoComponent from "../logo-component/LogoComponent";
 
-
 const HeaderComponent = () => {
   const [toggle, setToggle] = useState(false);
 
@@ -29,12 +28,6 @@ const HeaderComponent = () => {
       <div className="container">
         <nav>
           <LogoComponent />
-          {/* <NavLink to="/" className="logo-box">
-            <img src="src/assets/images/logo.svg" alt="logo" />
-            <h1>
-              Lates<span>VPN</span>
-            </h1>
-          </NavLink> */}
 
           <span onClick={() => toggleMenu()} className="burger-menu">
             <BurgerMenuIcon />
@@ -57,8 +50,16 @@ const HeaderComponent = () => {
             </ul>
 
             <div className="login-box">
-              <button ><NavLink className="sign-in-btn" to="/">Sign in</NavLink></button>
-              <button ><NavLink className="sign-up-btn" to="/signup">Sign up</NavLink></button>
+              <button>
+                <NavLink className="sign-in-btn" to="/">
+                  Sign in
+                </NavLink>
+              </button>
+              <button>
+                <NavLink className="sign-up-btn" to="/">
+                  Sign up
+                </NavLink>
+              </button>
             </div>
           </div>
         </nav>
