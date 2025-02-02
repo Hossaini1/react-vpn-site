@@ -1,4 +1,8 @@
 import "./sec3-component.scss";
+import vertorImgPc from '../../assets/images/Vector-pc.svg';
+import vertorImgMobile from '../../assets/images/Victor-mobile.svg';
+import sponseredImgPc from '../../assets/images/Sponsored-pc.svg';
+import sponseredImgMobile from '../../assets/images/Sponsored-mobile.svg';
 
 const Sec3Component = () => {
   return (
@@ -14,23 +18,23 @@ const Sec3Component = () => {
       <div className="img1">
         <picture>
           <source
-            srcSet="src/assets/images/Vector-pc.svg"
+            srcSet={vertorImgPc}
             media="(min-width:678px)"
             alt="farmer-image-pc"
           />
-          <img src="src/assets/images/Vector-pc.svg" alt="farmer-bild-mobile" />
+          <img src={vertorImgMobile} alt="farmer-bild-mobile" />
         </picture>
       </div>
 
       <div className="img2">
         <picture>
           <source
-            srcSet="src/assets/images/Sponsored-pc.svg"
+            srcSet={sponseredImgPc}
             media="(min-width:678px)"
             alt="sponsered-company-image-pc"
           />
           <img
-            src="src/assets/images/Sponsored-mobile.svg"
+            src={sponseredImgMobile}
             alt="sponsered-company-image-pc"
           />
         </picture>

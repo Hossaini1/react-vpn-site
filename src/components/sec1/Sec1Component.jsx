@@ -2,6 +2,8 @@ import "./sec1-component.scss";
 import { LocationIcon, ServiceIcon, TickIcon, UsersIcon } from "../icons/Icons";
 import hero1ImgPc from '../../assets/images/hero-img.svg';
 import hero1ImgMobile from '../../assets/images/hero1-mobile.svg';
+import hero2ImgPc from '../../assets/images/hero2-pc.svg';
+import hero2ImgMobile from '../../assets/images/hero2-mobile.svg';
 
 
 const Sec1Component = () => {
@@ -72,10 +74,10 @@ const Sec1Component = () => {
           <div className="heros2-img">
             <picture>
               <source
-                srcSet="src\assets\images\hero2-pc.svg"
+                srcSet={hero2ImgPc}
                 media="(min-width: 576px)"
               />
-              <img src="src\assets\images\hero2-mobile.svg" alt="hero2-image" />
+              <img src={hero2ImgMobile} alt="hero2-image" />
             </picture>
           </div>
 

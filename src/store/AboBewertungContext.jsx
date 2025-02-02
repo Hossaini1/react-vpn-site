@@ -1,5 +1,11 @@
 import { createContext, useContext } from "react";
 import PropTypes from "prop-types";
+import aboImgPc from "../assets/images/abo.svg";
+import aboImgMobile from '../assets/images/abo-mobile.svg';
+import avatar1 from '../assets/images/1.jpg';
+import avatar2 from '../assets/images/2.jpg';
+import avatar3 from '../assets/images/3.jpg';
+import avatar4 from '../assets/images/4.jpg';
 
 const AboBewertungContenxt = createContext();
 
@@ -7,8 +13,8 @@ export const AboBewertungContextProvider = ({ children }) => {
   const abos = [
     {
       id: 1,
-      imagePc: "src/assets/images/abo.svg",
-      imageMobile: "src/assets/images/abo-mobile.svg",
+      imagePc: aboImgPc,
+      imageMobile: aboImgMobile,
 
       title: "Free",
       options: [
@@ -21,8 +27,8 @@ export const AboBewertungContextProvider = ({ children }) => {
     },
     {
       id: 2,
-      imagePc: "src/assets/images/abo.svg",
-      imageMobile: "src/assets/images/abo-mobile.svg",
+      imagePc: aboImgPc,
+      imageMobile: aboImgMobile,
 
       title: "Standard plan",
       options: [
@@ -38,8 +44,8 @@ export const AboBewertungContextProvider = ({ children }) => {
     },
     {
       id: 3,
-      imagePc: "src/assets/images/abo.svg",
-      imageMobile: "src/assets/images/abo-mobile.svg",
+      imagePc: aboImgPc,
+      imageMobile: aboImgMobile,
       title: "Premium plan",
       options: [
         "Unlimited bandwitch",
@@ -63,7 +69,7 @@ export const AboBewertungContextProvider = ({ children }) => {
       rating: 4.5,
       review:
         "I am very happy to use this VPN. It turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best.",
-      avatar: "src/assets/images/1.jpg",
+      avatar: avatar1,
     },
     {
       id: "u2",
@@ -71,7 +77,7 @@ export const AboBewertungContextProvider = ({ children }) => {
       location: "Warsaw, Germany",
       rating: 5,
       review: "I am very happy to use this VPN.",
-      avatar: "src/assets/images/2.jpg",
+      avatar: avatar2,
     },
     {
       id: "u3",
@@ -80,7 +86,7 @@ export const AboBewertungContextProvider = ({ children }) => {
       rating: 4,
       review:
         "I am very happy to use this VPN. It turned out to be more than my expectations .",
-      avatar: "src/assets/images/3.jpg",
+      avatar: avatar3,
     },
     {
       id: "u4",
@@ -88,7 +94,7 @@ export const AboBewertungContextProvider = ({ children }) => {
       location: "Warsaw, USA",
       rating: 4.5,
       review: "I am very happy to use LaslesVPN always the best.",
-      avatar: "src/assets/images/4.jpg",
+      avatar: avatar4,
     },
   ];
 
