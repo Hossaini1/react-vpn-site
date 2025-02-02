@@ -1,5 +1,8 @@
-import { LocationIcon, ServiceIcon, TickIcon, UsersIcon } from "../icons/Icons";
 import "./sec1-component.scss";
+import { LocationIcon, ServiceIcon, TickIcon, UsersIcon } from "../icons/Icons";
+import hero1ImgPc from '../../assets/images/hero-img.svg';
+import hero1ImgMobile from '../../assets/images/hero1-mobile.svg';
+
 
 const Sec1Component = () => {
   return (
@@ -22,11 +25,11 @@ const Sec1Component = () => {
           <div className="hero-img">
             <picture>
               <source
-                srcSet="src/assets/images/hero-img.svg"
+                srcSet={hero1ImgPc}
                 media="(min-width:586px)"
                 alt="hero1-image"
               />
-              <img src="src/assets/images/hero1-mobile.svg" alt="hero1-image" />
+              <img src={hero1ImgMobile} alt="hero1-image" />
             </picture>
           </div>
         </div>
