@@ -5,7 +5,7 @@ const LogoComponent = () => {
   return (
     <>
       <NavLink to="/" className="logo-box">
-        <img src="src/assets/images/logo.svg" alt="logo" />
+        <img src="../../assets/images/logo.svg" alt="logo" />
         <h1>
           Lates<span>VPN</span>
         </h1>
